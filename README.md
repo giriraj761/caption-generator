@@ -51,10 +51,10 @@ Start the development server:\
 ```
 npm start
 ```
-```
-Open http://localhost:3000 in your browser.\
-```
-Upload an image and observe the generated caption.\
+Open ```http://localhost:3000``` in your browser.
+
+Upload an image and observe the generated caption.
+
 Customization:
 
 The project is designed to be flexible and customizable. You can modify the following aspects to suit your specific needs:\
