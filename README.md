@@ -74,14 +74,18 @@ Deploy the application to a production environment\
 
 Contribution:
 
-This project is a major project created by \
+This project is a major project created by
 
 ```NAMES```
 
 Credits:
 
-TensorFlow (https://www.tensorflow.org/)\
-Keras (https://keras.io/)\
-NLTK (https://www.nltk.org/)\
-SpaCy (https://spacy.io/)\
+TensorFlow (https://www.tensorflow.org/)
+
+Keras (https://keras.io/)
+
+NLTK (https://www.nltk.org/)
+
+SpaCy (https://spacy.io/)
+
 OpenCV (https://opencv.org/)
