@@ -14,12 +14,12 @@ Built with modern technologies and frameworks
 Project Structure:
 
 .
-├── README.md
-├── package.json
-├── public
-│   ├── index.html
-│   └── ...
-├── src
+├── README.md\n
+├── package.json\n
+├── public\n
+│   ├── index.html\n
+│   └── ...\n
+├── src\n
 │   ├── components
 │   │   ├── ImageUploader.js
 │   │   └── ...
