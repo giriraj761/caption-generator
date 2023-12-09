@@ -11,15 +11,16 @@ Powerful neural network model trained on large datasets
 Generates accurate and descriptive captions for uploaded images
 Flexible and customizable architecture
 Built with modern technologies and frameworks
+
 Project Structure:
 
 .
-├── README.md\n
-├── package.json\n
-├── public\n
-│   ├── index.html\n
-│   └── ...\n
-├── src\n
+├── README.md\
+├── package.json\
+├── public\
+│   ├── index.html\
+│   └── ...\
+├── src
 │   ├── components
 │   │   ├── ImageUploader.js
 │   │   └── ...
