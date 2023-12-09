@@ -1,18 +1,18 @@
 
 Image Caption Generator with React, TensorFlow, ANN & Soft Computing\
-Project Overview:\
+Project Overview:
 
 This project is an Image Caption Generator developed using the React framework in conjunction with TensorFlow, Artificial Neural Networks (ANN), and Soft Computing techniques. It allows users to upload images, which are then processed through a sophisticated neural network model to generate descriptive captions for the uploaded images.
 
-Key Features:\
+Key Features:
 
 User-friendly interface for uploading images\
 Powerful neural network model trained on large datasets\
 Generates accurate and descriptive captions for uploaded images\
 Flexible and customizable architecture\
-Built with modern technologies and frameworks\
+Built with modern technologies and frameworks
 
-Project Structure:\
+Project Structure:
 
 .\
 ├── README.md\
@@ -51,9 +51,11 @@ Start the development server:\
 ```
 npm start
 ```
+```
 Open http://localhost:3000 in your browser.\
+```
 Upload an image and observe the generated caption.\
-Customization:\
+Customization:
 
 The project is designed to be flexible and customizable. You can modify the following aspects to suit your specific needs:\
 
@@ -61,7 +63,7 @@ The neural network architecture\
 The training dataset\
 The image processing pipeline\
 The caption generation algorithm\
-Further Development:\
+Further Development:
 
 This project serves as a solid foundation for further development and exploration. You can explore the following possibilities:\
 
@@ -76,10 +78,10 @@ This project is a major project created by \
 
 ```NAMES```
 
-Credits:\
+Credits:
 
 TensorFlow (https://www.tensorflow.org/)\
 Keras (https://keras.io/)\
 NLTK (https://www.nltk.org/)\
 SpaCy (https://spacy.io/)\
-OpenCV (https://opencv.org/)\
+OpenCV (https://opencv.org/)
