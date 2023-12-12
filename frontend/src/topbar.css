@@ -6,6 +6,7 @@
     display :flex;
     align-items: center;
     position: sticky;
+    font-size:30px;
     background-color:whitesmoke;
    box-shadow: 0 .3rem 1rem rgba(133, 130, 130, 0.5);
    justify-content: space-between;
@@ -51,3 +52,36 @@
   .btnn:hover {
     background-color: rgb(99, 65, 248);
   }
+
+
+@media only screen and (max-width: 1080px) {
+    .topbarcontainer{
+      margin-top: -25px;
+      margin-left: 80px;
+      width:920px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+    .topbarcontainer{
+      margin-top: -25px;
+      margin-left: 215px;
+      width:920px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .topbarcontainer{
+    margin-top: -25px;
+    margin-left: 160px;
+    width:920px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+  .topbarcontainer{
+    margin-top: -25px;
+    margin-left: 60px;
+    width:850px;
+  }
+}

@@ -92,6 +92,7 @@ h2{
     font-size: 20px;
     padding: 10px 40px 10px 40px;
     text-decoration: none;
+    transition: all 500ms ease-in;
   }
   .btn:hover {
     background: #30e3cb;

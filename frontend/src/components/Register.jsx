@@ -56,60 +56,55 @@ const Register = () => {
 
     return (
         <div className="login-container">
-            <div className="login-form" style={{padding:"0px 50px"}}>
             <h2>Sign Up</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="firstname" style={{color:'black'}}>First Name</label>
+            <h3 id="logo">Sign Up</h3>
+                    <label for="firstname">First Name</label>
                     <input
                         type="text"
                         id="firstname"
                         name="firstname"
                         value={user.firstname}
+                        placeholder="Type in your firstname.."
+                        autocomplete="off"
                         onChange={handleChange}
-                        style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
                         required
                     />
-                </div>
-                <div>
-                    <label htmlFor="lastname" style={{color:'black'}}>Last Name</label>
+                    <label for="lastname">Last Name</label>
                     <input
                         type="text"
                         id="lastname"
                         name="lastname"
-                        style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
                         value={user.lastname}
+                        placeholder="Type in your lastname.."
+                        autocomplete="off"
                         onChange={handleChange}
                         required
                     />
-                </div>
-                <div>
-                    <label htmlFor="email" style={{color:'black'}}>Email</label>
+                    <label for="email">Email</label>
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
                         value={user.email}
+                        placeholder="Type in your email.."
+                        autocomplete="off"
                         onChange={handleChange}
                         required
                     />
-                </div>
-                <div>
-                    <label htmlFor="password" style={{color:'black'}}>Password</label>
+                    <label for="password">Password</label>
                     <input
                         type="password"
                         id="password"
                         name="password"
-                        style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
                         value={user.password}
+                        placeholder="Type in your password.."
+                        autocomplete="off"
                         onChange={handleChange}
                         required
                     />
-                </div>
-                <button type="submit" className="btnsignup" style={{marginBottom:"13px"}}>Sign Up</button>
+                <button type="submit" className="btn">Sign Up</button>
             </form>
-            </div>
             <img className="login-image" style={{transform: "scalex(-1)", paddingLeft:"34px"}} src={search} alt="Cat" />
         </div>
     )

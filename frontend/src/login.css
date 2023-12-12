@@ -1,18 +1,17 @@
 .login-container {
-  /* border: 2px solid green; */
   display: flex;
-  background-color: #2F3B69;
+  background-color: #fff;
   height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .login-image {
-  /* border: 2px solid red; */
   width: 19rem;
-  padding-left: 39px;
+  /* padding-left: 39px; */
+  /* padding-left: 39px; */
 }
-
+/* 
 .login-form {
   border: 1px solid black;
   display: flex;
@@ -61,7 +60,6 @@
   text-decoration: none;
   width: 35%;
   margin-top: 24px;
-  /* margin-left: 104px; */
 }
 
 .btn:hover {
@@ -73,8 +71,6 @@
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
-
-/* --------------------------- Signup button -------------------------------- */
 
 .btnsignup:hover {
   background: #30e3cb;
@@ -103,5 +99,121 @@
     text-decoration: none;
     width: 40%;
     margin-top: 15px;
-    /* margin-left: 97px; */
 }
+ */
+
+ @import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+ body {
+   margin:0;
+   font-family:arial,tahoma,sans-serif;
+   font-size:12px;
+   font-weight:normal;
+   direction:ltr;
+ }
+ 
+ 
+ form {
+     /* margin:10% auto 0 auto; */
+     padding:30px;
+     width:400px; 
+     height:auto;
+     overflow:hidden;
+     /* background:white; */
+     border-radius:10px;
+ }
+ 
+ form label {
+   font-size:20px;
+   color:darkgray;
+   cursor:pointer;
+ }
+ 
+ form label,
+ form input {
+   float:left;
+   clear:both;
+ }
+ form input {
+  font-size:15px;
+   margin:15px 0;
+   padding:15px 10px;
+   width:100%;
+   outline:none;
+   border:1px solid #bbb;
+   border-radius:20px;
+   display:inline-block;
+   -webkit-box-sizing:border-box;
+        -moz-box-sizing:border-box;
+             box-sizing:border-box;
+       -webkit-transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+         -ms-transition:0.2s ease all;
+          -o-transition:0.2s ease all;
+             transition:0.2s ease all;
+ }
+  
+ form input[type=text]:focus,
+ form input[type="password"]:focus {
+   border-color:cornflowerblue;
+ }
+ form .btn {
+  font-size:18px;
+  margin:15px 0;
+   padding:15px 50px;
+   outline:none;
+   width:auto;
+   background:#1abc9c;
+   border:none;
+   border-radius:20px;
+   color:white;
+   cursor:pointer;
+   display:inline-block;
+   float:right;
+   clear:right;
+   -webkit-transition:0.2s ease all;
+      -moz-transition:0.2s ease all;
+       -ms-transition:0.2s ease all;
+        -o-transition:0.2s ease all;
+           transition:0.2s ease all;
+ }
+ 
+  form .btn:hover {
+     opacity:0.8;
+   }
+   form .btn:active {
+     opacity:0.4;
+   }
+
+   .register {
+    font-size:15px;
+     margin:10px;
+     float:left;
+     clear:left;
+     display:inline-block;
+     color:cornflowerblue;
+       text-decoration:none;
+     }
+     .register:hover {
+       color:darkgray;
+     }
+ 
+     #logo {
+         margin:0 auto;
+         margin-bottom:30px;
+         width:300px;
+         font-family:'Lily Script One', cursive;
+         font-size:60px;
+         font-weight:bold;
+         text-align:center;
+         color:lightgray;
+         -webkit-transition:0.2s ease all;
+            -moz-transition:0.2s ease all;
+             -ms-transition:0.2s ease all;
+              -o-transition:0.2s ease all;
+                 transition:0.2s ease all;
+       }
+ 
+       #logo:hover {
+           color:cornflowerblue;
+         }

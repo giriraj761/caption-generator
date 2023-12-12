@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom"
-import '../login.css'
+import '../login.css';
 import quepng from '../background/question.png';
 
 const Login = () => {
@@ -55,38 +55,33 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      {/* <div className="login-image"> HI there</div> */}
-      <div className="login-form">
-        <h2>Login</h2>
-        <form style={{padding: '8px 30px'}} onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="email">Email</label>
+        <form onSubmit={handleSubmit}>
+          <h3 id="logo">Log In</h3>
+            <label for="email">Email</label>
             <input
               type="email"
               id="email"
               name="email"
-              style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
               value={user.email}
+              placeholder="Type in your email.."
+              autocomplete="off"
               onChange={handleChange}
               required
             />
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
+            <label for="password">Password</label>
             <input
               type="password"
               id="password"
               name="password"
-              style={{border: '1px solid black',backgroundColor: '#d6cdd4'}}
               value={user.password}
+              placeholder="Enter your password.." 
+              autocomplete="off"
               onChange={handleChange}
               required
             />
-          </div>
           <button type="submit" className='btn'>Login</button>
+          <Link to='/register' className='register'>New User?</Link>
         </form>
-        <Link to='/register' style={{color:'blue'}}>New User?</Link>
-      </div>
       <img className="login-image" src={quepng} alt="Cat" />
     </div>
   );

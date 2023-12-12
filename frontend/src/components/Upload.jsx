@@ -6,6 +6,7 @@ import Topbar from "../Topbar";
 // import back2 from "./background/back2.jpg"
 import back2 from "../background/back2.jpg"
 import Result from "./Result";
+import Background from './UploadBackground';
 import Loader from "./Loader";
 // BHushan
 
@@ -58,10 +59,11 @@ const ImageCaptionGenerator = () => {
 
     return (
         <>
-            <div>
+            
 
-                {!bool && <div className="divtop" style={{ backgroundImage: `url(${back2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", height: 770, width: 1320 }}>
-
+                {/* {!bool && <div className="divtop" style={{ backgroundImage: `url(${back2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}> */}
+                <Background  />
+                {!bool && <div className="divtop">
                     <Topbar />
                     <div className="div1">
                         <div className="rightbar">
@@ -74,17 +76,17 @@ const ImageCaptionGenerator = () => {
                                 </h1>
                             }
 
-                            <h5 style={{ color: 'black', fontSize: "16px" }}>Let Images Speak <br />Upload an Image to Generate Captivating Captions!</h5>
+                            <h5 className="sub_head" style={{ color: 'white'}}>Let Images Speak <br />Upload an Image to Generate Captivating Captions!</h5>
 
-                           
-
-                            <input type="file" style={{color:"black"}} onChange={handleImageChange} />
+                        
+                            <input type="file" style={{color:"white"}} className="file-input" onChange={handleImageChange} />
+                            
 
                             <div className="imgdiv">
                                 {preview && <img className="imgcss" src={preview} alt="image" />}
                             </div>
                             
-                            <div>
+                            <div className="btn1">
                                 
                                 <button className="btnGenerate" onClick={handleGenerateCaption}>Generate Caption</button>
 
@@ -94,7 +96,6 @@ const ImageCaptionGenerator = () => {
                 </div>}
 
                 {bool && <Result img={selectedFile} />}
-            </div>
         </>
     );
 };
