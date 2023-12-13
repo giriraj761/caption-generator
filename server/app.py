@@ -7,7 +7,9 @@ from keras.applications import ResNet50
 from keras.optimizers import Adam
 from keras.layers import Dense, Flatten,Input, Convolution2D, Dropout, LSTM, TimeDistributed, Embedding, Bidirectional, Activation, RepeatVector,Concatenate
 from keras.models import Sequential, Model
-from keras.utils import np_utils
+# from keras.utils import np_utils
+from tensorflow.python.keras.utils import np_utils
+# from tf.keras.utils import to_categorical
 from keras.preprocessing import image, sequence
 import cv2
 from keras_preprocessing.sequence import pad_sequences
@@ -23,7 +25,7 @@ print("resnet loaded")
 
 # resnet = load_model('resnet.h5')
 
-vocab = np.load('vocab.npy', allow_pickle=True)               
+vocab = np.load("Y:\\caption generator\\server\\vocab.npy", allow_pickle=True)               
 # vocab = np.load('vocab1.npy', allow_pickle=True)        #---------------- Changes
 
 vocab = vocab.item()
@@ -58,7 +60,7 @@ model = Model(inputs=[image_model.input, language_model.input], outputs = out)
 # model.load_weights("../input/model_weights.h5")
 model.compile(loss='categorical_crossentropy', optimizer='RMSprop', metrics=['accuracy'])
 
-model.load_weights('mine_model_weights.h5')
+model.load_weights('Y:\caption generator\server\mine_model_weights.h5')
 # model.load_weights('model_weights.h5')                     #---------------- Changes
 
 print("="*50)
@@ -76,8 +78,8 @@ def after():
     global model,vocab,inv_vocab 
     file = request.files['file']
 
-    file.save('static/file.jpg')
-    img = cv2.imread('static/file.jpg')
+    file.save('Y:\\caption generator\\server\\static\\file.jpg')
+    img = cv2.imread('Y:\\caption generator\\server\\static\\file.jpg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img,(224,224,))                    # diff
     img = np.reshape(img,(1,224,224,3))
