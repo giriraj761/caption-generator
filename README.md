@@ -1,4 +1,5 @@
 
+
 ## Image Caption Generator with React, TensorFlow, ANN & Soft Computing
 
 
@@ -13,7 +14,6 @@ This project is an Image Caption Generator developed using the React framework i
  - Generates accurate and descriptive captions for uploaded images
  - Flexible and customizable architecture
  - Built with modern technologies and frameworks
-
 
 ***Dependencies:***
 
@@ -59,18 +59,17 @@ This project serves as a solid foundation for further development and exploratio
 
 ***Contribution:***
 
-This project is a major project created by
-
-``NAMES``
-
 ```
-GIRIRAJ KRISHNA SHARMA - 20051973
+GIRIRAJ KRISHNA SHARMA - 20051973 
 ANURAG PANDEY - 20051980
-B VARUN RAO - 20051987
+B VARUN RAO - 20051987 
 ABHISHEK KHANDELWAL - 20051715
-AASHISH AGRAHARI - 20052002
+AASHISH AGRAHARI - 20052002 
 RAVI KUMAR KANU BANIYA - 20051748
 ```
+> This is a major project created by
+> Students of Kalinga Institute Of Industrial Technology
+
 
 ***Credits:***
 
