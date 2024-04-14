@@ -14,23 +14,6 @@ This project is an Image Caption Generator developed using the React framework i
  - Flexible and customizable architecture
  - Built with modern technologies and frameworks
 
-***Project Structure:***
-*.*
-*├── README.md*
-*├── package.json*
-*├── public*
-*│   ├── index.html*
-*├── src*
-*│   ├── components*
-*│   │   ├── ImageUploader.js*
-*│   │   └──* 
-*│   ├── models*
-*│   │   └── CaptionGenerator.js*
-*│   ├── services*
-*│   │   └── ImageProcessor.js*
-*│   └── utils*
-*│   └── App.js*
-
 
 ***Dependencies:***
 
