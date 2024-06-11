@@ -44,7 +44,6 @@ model = Model(inputs=[image_model.input, language_model.input], outputs=out)
 
 # Compile the model using MSE loss function
 model.compile(loss='mean_squared_error', optimizer='RMSprop', metrics=['accuracy'])
-mine_model_weights.compile(loss='mean_squared_error', optimizer='RMSprop', metrics=['accuracy'])
 
 # Load model weights
 model.load_weights('Y:\\caption generator\\server\\mine_model_weights.h5')
